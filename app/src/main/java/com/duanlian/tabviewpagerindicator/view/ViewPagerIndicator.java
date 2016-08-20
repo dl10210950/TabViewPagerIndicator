@@ -18,6 +18,7 @@ public class ViewPagerIndicator extends LinearLayout {
     private int mTriangleWidth;//三角形的宽度
     private int mTriangleHeight;//三角形的高度
     /*
+    设置三角形的底边长度
     我们一共有3个tab，三角形的底边长度大概是每个tab的1/6
      */
     private static final float RADIO_TRIANGLE_WIDTH = 1 / 6F;//三角形底边长度和tab长度的比例
@@ -63,8 +64,8 @@ public class ViewPagerIndicator extends LinearLayout {
      *
      * @param w    控件的长度
      * @param h   高度
-     * @param oldw   以前的高度
-     * @param oldh
+     * @param oldw   以前的长度
+     * @param oldh 以前的高度
      */
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
