@@ -24,7 +24,6 @@ public class ViewPagerIndicator extends LinearLayout {
     private int mInitTranslationX;//三角形初始化的偏移位置
     private int mTranslationX;//移动时的偏移量
 
-
     public ViewPagerIndicator(Context context) {
         this(context, null);
     }
@@ -33,7 +32,7 @@ public class ViewPagerIndicator extends LinearLayout {
         super(context, attrs);
         mPaint = new Paint();//实例化画笔
         mPaint.setAntiAlias(true);//设置抗锯齿
-        mPaint.setColor(Color.parseColor("#ffffffff"));//设置画笔的颜色,也就是三角形的颜色
+        mPaint.setColor(Color.parseColor("#c9b2ab"));//设置画笔的颜色,也就是三角形的颜色
         mPaint.setStyle(Paint.Style.FILL);//设置style
         mPaint.setPathEffect(new CornerPathEffect(3));//设置三角形圆角
 
@@ -63,8 +62,8 @@ public class ViewPagerIndicator extends LinearLayout {
      * 当控件的宽高发生变化时都会回调这个方法
      *
      * @param w    控件的长度
-     * @param h
-     * @param oldw
+     * @param h   高度
+     * @param oldw   以前的高度
      * @param oldh
      */
     @Override
